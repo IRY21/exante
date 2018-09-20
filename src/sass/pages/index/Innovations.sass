@@ -1,0 +1,94 @@
+.Innovations
+  width: 100%
+  &-Container
+  &-Body
+    min-height: 100vh
+    display: flex
+    align-items: center
+  &-Content
+  &-Title
+    margin-top: 0
+    margin-bottom: 25px
+    font-size: 36px
+    font-weight: 400
+    color: $main-color
+    line-height: 1.2
+    +r(xs)
+      font-size: 22px
+  &-Text
+    &:last-of-type
+      margin-bottom: 0
+  &-Slider
+    margin-top: 60px
+
+
+.InnovationsSlider
+  width: 100%
+  padding-top: 50px
+  position: relative
+  +r(xs)
+    margin-top: 26px
+    padding-top: 45px
+    overflow: hidden
+  &-Track
+    width: 200%
+    position: relative
+    &:after
+      content: ''
+      clear: both
+      display: block
+  &-Arrow
+    width: 15px
+    height: 20px
+    background-image: url(/img/InnovationsSlider-Arrow.svg)
+    background-position: center center
+    background-size: 100%
+    background-repeat: no-repeat
+    position: absolute
+    top: 0
+    opacity: 0.5
+    cursor: pointer
+    transition: all ease-in-out .25s
+    &:hover
+      opacity: 1
+    &_prev
+      left: -50px
+      +r(sl)
+        left: 0
+    &_next
+      transform: rotate(180deg)
+      left: -15px
+      +r(sl)
+        left: 35px
+  &-Slide
+    width: 614px
+    margin-right: 137px
+    opacity: 0.5
+    float: left
+    +r(xs)
+      width: 50%
+      margin-right: 0
+    &_current-slide
+      opacity: 1
+    &-Item
+      margin-bottom: 39px
+      &:last-of-type
+        margin-bottom: 0
+  &-Top
+    margin-bottom: 26px
+    display: flex
+    align-items: center
+    +r(xs)
+      margin-bottom: 10px
+  &-Icon
+    height: 44px
+    margin-right: 28px
+    +r(xs)
+      display: none
+  &-Title
+    margin: 0
+    font-weight: 400
+  &-Text
+    margin-top: 0
+    &:last-of-type
+      margin-bottom: 0

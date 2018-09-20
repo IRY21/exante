@@ -1,0 +1,32 @@
+@import "bourbon"
+@import "vars"
+
++font-face("exo2", "/font/exo2light/exo2light", 100, $file-formats: eot woff ttf svg)
++font-face("exo2", "/font/exo2regular/exo2regular", $file-formats: eot woff ttf svg)
++font-face("exo2", "/font/exo2semibold/exo2semibold", 500, $file-formats: eot woff ttf svg)
++font-face("icomoon", "/font/icomoon/icomoon", $file-formats: eot woff ttf svg)
+
+body
+  margin: 0
+  padding: 0
+  font-family: $font-default
+  font-size: 18px
+  font-weight: 100
+  line-height: 1.5
+  -webkit-text-size-adjust: 100%
+  color: $text-color
+  +r(xs)
+    font-size: 16px
+
+.Container
+  width: 100%
+  max-width: 1260px
+  margin-right: auto
+  margin-left: auto
+  padding-left: 30px
+  padding-right: 30px
+  box-sizing: border-box
+  transition: all 0.15s linear
+  +r(xs)
+    padding-left: 20px
+    padding-right: 20px

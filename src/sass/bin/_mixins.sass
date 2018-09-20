@@ -1,0 +1,13 @@
+@mixin r($class)
+  @if $class == xxs
+    @media (max-width: 481px) { @content; }
+  @else if $class == xs
+    @media (max-width: 575px) { @content; }
+  @else if $class == sm
+    @media (max-width: 767px) { @content; }
+  @else if $class == lg
+    @media (max-width: 991px) { @content; }
+  @else if $class == sl
+    @media (max-width: 1360px) { @content; }
+  @else if $class == ret
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and ( -o-min-device-pixel-ratio: 2/1), only screen and ( min-device-pixel-ratio: 2), only screen and ( min-resolution: 192dpi), only screen and ( min-resolution: 2dppx) { @content; }

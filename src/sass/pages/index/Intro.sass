@@ -1,0 +1,63 @@
+.Intro
+  width: 100%
+  background-color: #ffffff
+  background-image: url(/img/Intro-Bg.png)
+  background-position: center center
+  background-repeat: no-repeat
+  +r(ret)
+    background-image: url(/img/Intro-Bg@2x.png)
+  +r(xs)
+    background-position: 10% center
+  &-Container
+  &-Body
+    min-height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+  &-Content
+    padding-bottom: 89px // size Intro-ArrowDown: height + bottom
+    text-align: center
+    +r(xs)
+      padding-bottom: 51px // size Intro-ArrowDown: height + bottom
+  &-Logo
+    width: 306px
+    margin-bottom: 44px
+    +r(xs)
+      width: 184px
+  &-Title
+    margin-top: 0
+    margin-bottom: 33px
+    font-size: 36px
+    font-weight: 400
+    line-height: 1
+    +r(xs)
+      margin-bottom: 0
+      font-size: 22px
+  &-Subtitle
+    margin: 0
+    font-size: 24px
+    font-weight: 400
+    line-height: 1.2
+    +r(xs)
+      display: none
+  &-ArrowDown
+    width: 64px
+    height: 64px
+    background-image: url(/img/Intro-ArrowDown-Icon.svg)
+    background-size: 22px
+    background-repeat: no-repeat
+    background-position: center 52%
+    border: 2px solid $accent-color
+    border-radius: 50%
+    position: absolute
+    left: calc(50% - 32px)
+    bottom: 25px
+    cursor: pointer
+    +r(xs)
+      width: 28px
+      height: 21px
+      background-image: url(/img/Intro-ArrowDown-Icon_phone.svg)
+      border: none
+      left: calc(50% - 14px)
+      bottom: 30px
